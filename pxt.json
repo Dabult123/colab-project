@@ -2,7 +2,8 @@
     "name": "colab project",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "sevenseg": "*"
     },
     "files": [
         "main.blocks",
