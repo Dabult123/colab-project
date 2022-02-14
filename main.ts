@@ -1,3 +1,11 @@
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    pickNumber()
+})
+function pickNumber () {
+    number = randint(0, 1000)
+    game.splash(number)
+}
+let number = 0
 let Wheel = sprites.create(img`
     ................................
     ................................
@@ -43,4 +51,3 @@ let Wheel = sprites.create(img`
     ................................
     `, SpriteKind.Player)
 game.splash("Hello " + game.askForString("What is your name?") + "! Welcome to the game!")
-let myCounter = sevenseg.createCounter(SegmentStyle.Medium, SegmentScale.Half, 3)
